@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital service website</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/animations/animations.css">
+    <link rel="stylesheet" href="/css/animations/keyframes.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="/js/script.js"></script>
+    <script src="/js/text.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/onscroll.js"></script>
+    <script src="/js/library.js"></script>
+    <script src="/js/eye.js"></script>
+
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="header-index">
+            <header>
+                <nav class="container navbar flex flex-space-between">
+                    <div class="container navbar">
+                        <div class="container-nav flex">
+                            <a href="/" class="navbar-logo"><img src="images/logo.png" alt=""></a>
+                            <button onclick="openNav()" class="navbar-toggler ">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+
+                            <ul class="navbar-nav flex">
+                                <li><a href="/" class="nav-link active">Home</a></li>
+                                <li><a href="/" class="nav-link">About</a></li>
+                                <li><a href="/" class="nav-link">Contact</a></li>
+                                <li class="dropdown"><a href="/" class="nav-link dropdown-toggle">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/" class="dropdown-item">Services</a></li>
+                                        <li><a href="/" class="dropdown-item">Pricing Plan</a></li>
+                                        <li><a href="/" class="dropdown-item">Portfolio</a></li>
+                                        <li><a href="/" class="dropdown-item">Team</a></li>
+                                        <li><a href="/" class="dropdown-item">Testimonials</a></li>
+                                        <li><a href="/" class="dropdown-item">FAQ</a></li>
+                                        <li><a href="/" class="dropdown-item">Blog</a></li>
+                                        <li><a href="/" class="dropdown-item">Coming soon</a></li>
+                                        <li><a href="/" class="dropdown-item">404</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-right flex">
+                        <p>Call Us: <span>+123 456 7890</span></p>
+                        <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-bars" onclick="open_right()"></i>
+                    </div>
+                </nav>
+                <aside id="sidePanel" class="sidePanel">
+                    <div class="sidebar flex flex-space-between">
+                        <a href="">
+                            <img src="images/logo.png" alt="">
+
+                        </a>
+                        <button onclick="closeNav()" type="button" class="close-btn btn_hover1">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="/" class="nav-link active">Home</a></li>
+                            <li><a href="/" class="nav-link ">About</a></li>
+                            <li><a href="/" class="nav-link ">Contact</a></li>
+                            <li><a href="/" class="pages ">More</a></li>
+                            <li class="collapse-btn flex flex-space-between flex-direction-row-reverse">
+                                <a href="" class="nav-link plus_collapse" data-bs-toggle="collapse">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a href="/" class="nav-link">Services</a></li>
+                                        <li><a href="/" class="nav-link">Pricing Plan</a></li>
+                                        <li><a href="/" class="nav-link">Portfolio</a></li>
+                                        <li><a href="/" class="nav-link">Team</a></li>
+                                        <li><a href="/" class="nav-link">Testimonials</a></li>
+                                        <li><a href="/" class="nav-link">FAQ</a></li>
+                                        <li><a href="/" class="nav-link">Blog</a></li>
+                                        <li><a href="/" class="nav-link">Coming Soon</a></li>
+                                        <li><a href="/" class="nav-link">404</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div id="search-bar">
+                    <div>
+                        <button class="btn_hover1" onclick="close_search()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <form action="#" method="search">
+                        <input type="search" class="search" required placeholder="Seach...">
+                        <button type="submit" class="btn_hover1 search-btn">Search</button>
+                    </form>
+                </div>
+
+                <!-- right risebar -->
+                <section class="header-right-sidebar" id="right_side">
+                    <div class="flex flex-space-between">
+                        <a href="/"><img src="images/right-side-logo.png" alt="logo"></a>
+                        <button onclick="close_right()" class="btn_hover1 close_rightSidebar">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laudantium harum vero nam
+                        non inventore quasi ad aperiam vitae magnam?</p>
+                    <a href="" class="btn_hover1 width-max-content">Discover More</a>
+                    <hr>
+                    <h4>Connected details</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="#" class="text-lowercase">Yourname@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#">+123-456-7890</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-regular fa-clock"></i></a>
+                            <a href="#">Office Hours: 8AM - 11PM Sunday - Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+
+            <section class="hero">
+                <div class="eye eye-1">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye eye-2">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye eye-3">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye eye-4">
+                    <div class="pupil"></div>
+                </div>
+
+
+
+                <div class="container" data-anim="zoom_in">
+                    <div>
+                        <div class="hero-social-icon flex flex-direction-column">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="center-data flex flex-direction-column gap-10">
+                        <h1>Digital Services</h1>
+                        <h3>Building Your Empire Digitally</h3>
+                        <div class="center-btn flex">
+                            <a href="/" class="btn_hover1 width-max-content">Get Started</a>
+                            <a href="/" class="btn_hover2 width-max-content">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="feature">
+            <div class="container">
+                <div class="flex">
+                    <div class="header-card" data-anim="fade_up">
+                        <div>
+                            <figure>
+                                <img class="figure_img1" src="images/icon/feature1.png" alt="img">
+                            </figure>
+                            <h4>Customised Solutions</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque officiis quas,
+                                deserunt sint quasi.</p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-anim="fade_down">
+                        <div>
+                            <figure>
+                                <img src="images/icon/feature2.png" alt="img">
+                            </figure>
+                            <h4>Roi-Driven Approach</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque officiis quas,
+                                deserunt sint quasi.</p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-anim="fade_up">
+                        <div>
+                            <figure>
+                                <img src="images/icon/feature3.png" alt="img">
+                            </figure>
+                            <h4>Creative Solutioins</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque officiis quas,
+                                deserunt sint quasi.</p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-anim="fade_down">
+                        <div>
+                            <figure>
+                                <img src="images/icon/feature4.png" alt="img">
+                            </figure>
+                            <h4>Expert <br>Team</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque officiis quas,
+                                deserunt sint quasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logoipsum">
+            <div class="container">
+                <div class="flex flex-direction-column">
+                    <hr class="hr1">
+                    <h3 data-anim="zoom_in">Our Clients</h3>
+                </div>
+                <div class="logoipsum-slider" data-anim="zoom_in">
+                    <div class="slider-track">
+                        <figure><img src="images/home/logoipsum1.svg" alt="logoipsum"></figure>
+                        <figure><img src="images/home/logoipsum2.svg" alt="logoipsum"></figure>
+                        <figure><img src="images/home/logoipsum3.svg" alt="logoipsum"></figure>
+                        <figure><img src="images/home/logoipsum4.svg" alt="logoipsum"></figure>
+                        <figure><img src="images/home/logoipsum5.svg" alt="logoipsum"></figure>
+                        <figure><img src="images/home/logoipsum6.svg" alt="logoipsum"></figure>
+                    </div>
+                </div>
+                <hr class="hr2">
+            </div>
+
+            <div class="hover-text">
+                <h1 id="animated-text"></h1>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-data">
+                    <div class="w-50" data-anim="fade_up">
+                        <div class="flex about-title">
+                            <hr>
+                            <h5>About Us</h5>
+                        </div>
+                        <h2>Explore Our Services and Boost you online precsence</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit vitae ex saepe vel
+                            nulla. Accusamus asperiores quia quae inventore.</p>
+                        <div class="flex tick">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                        </div>
+                        <div class="flex tick">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                        </div>
+                        <div class="flex button_container">
+                            <a href="#" class="btn_hover1 width-max-content">Get Started</a>
+                            <a href="#" class="btn_hover width-max-content">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="w-50 about-imgs flex" data-anim="fade_down">
+                        <span>
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#5d0f60 " data-anim="morph4" data-duration="7s"
+                                    d="M42.7,-73.4C54.6,-67,63.1,-54.2,71.5,-40.9C80,-27.6,88.4,-13.8,87.4,-0.6C86.4,12.7,76.1,25.3,67.4,38.2C58.7,51.1,51.7,64.1,40.7,71.4C29.7,78.7,14.9,80.2,-0.1,80.3C-15,80.4,-29.9,79.1,-40.9,71.8C-51.8,64.5,-58.7,51.2,-65.6,38.2C-72.6,25.2,-79.7,12.6,-80,-0.2C-80.3,-13,-73.8,-25.9,-66.4,-38.1C-58.9,-50.3,-50.5,-61.6,-39.3,-68.4C-28.1,-75.2,-14.1,-77.4,0.7,-78.5C15.4,-79.7,30.8,-79.8,42.7,-73.4Z"
+                                    transform="translate(100 100)" />
+                            </svg>
+                        </span>
+                        <div>
+                            <figure>
+                                <img src="images/home/about.png" alt="img">
+                            </figure>
+                        </div>
+                        <div class="ab-count">
+                            <h2>12+</h2>
+                            <p>year of experience</p>
+                        </div>
+                        <div class="about-hr">
+                            <hr>
+                            <h6>Who we Are</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="portfolio-1">
+                <div class="container">
+                    <div class="porto-center" data-anim="fade_up">
+                        <div class="w-50">
+                            <div class="flex">
+                                <hr class="gallary-hr1">
+                                <h5>Portfolio</h5>
+                            </div>
+                            <h2>Our Latest Project</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aliquid, eaque placeat
+                                est ducimus quisquam.</p>
+                        </div>
+                        <div class="flex w-100">
+                            <a href="/" class="btn_hover2 width-max-content">View All Projects</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallary">
+                <div class="ga-bg"></div>
+                <span></span>
+                <div class="container">
+                    <div class="tab" data-anim="fade_up">
+                        <button class="tablinks active" onclick="open_img(event, 'all')">All</button>
+                        <button class="tablinks" onclick="open_img(event, 'design')">Design</button>
+                        <button class="tablinks" onclick="open_img(event, 'development')">Development</button>
+                        <button class="tablinks" onclick="open_img(event, 'branding')">Branding</button>
+                        <button class="tablinks" onclick="open_img(event, 'ui_ux')">UI/UX</button>
+                        <button class="tablinks" onclick="open_img(event, 'marking')">Marketing</button>
+                        <button class="tablinks" onclick="open_img(event, 'seo')">Seo</button>
+                    </div>
+                    <div id="all" class="tabcontent" style="display: block;">
+                        <div class="flex">
+                            <div class="flex w-100">
+                                <div data-anim="fade_right">
+                                    <figure><img src="images/home/all-gallary-1.png" alt="img"></figure>
+                                </div>
+                                <div data-anim="fade_up">
+                                    <figure><img src="images/home/all-gallary-2.png" alt="img"></figure>
+                                </div>
+                                <div data-anim="fade_left">
+                                    <figure><img src="images/home/all-gallary-3.png" alt="img"></figure>
+                                </div>
+                                <div data-anim="fade_right">
+                                    <figure><img src="images/home/all-gallary-4.png" alt="img"></figure>
+                                </div>
+                                <div data-anim="fade_left">
+                                    <figure><img src="images/home/all-gallary-5.png" alt="img"></figure>
+                                </div>
+                                <div>
+                                    <figure data-anim="fade_right"><img src="images/home/all-gallary-6.png"
+                                            alt="sm_img">
+                                    </figure>
+                                    <figure data-anim="fade_right"><img src="images/home/all-gallary-7.png"
+                                            alt="sm_img">
+                                    </figure>
+                                </div>
+                                <div data-anim="fade_left">
+                                    <figure><img src="images/home/all-gallary-8.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="design" class="tabcontent">
+                        <div class="flex">
+                            <div class="flex w-100">
+                                <div data-anim="fade_right">
+                                    <figure><img src="images/home/design-gallary-3.png" alt="img"></figure>
+                                </div>
+                                <div class=" w_img" data-anim="fade_left">
+                                    <figure><img src="images/home/design-gallary-6.png" alt="w_img">
+                                    </figure>
+                                </div>
+                                <div class=" w_img" data-anim="fade_right">
+                                    <figure><img src="images/home/design-gallary-7.png" alt="w_img">
+                                    </figure>
+                                </div>
+                                <div data-anim="fade_left">
+                                    <figure><img src="images/home/design-gallary-1.png" alt="img"></figure>
+                                </div>
+                                <div data-anim="fade_right">
+                                    <figure><img src="images/home/design-gallary-2.png" alt="img"></figure>
+                                </div>
+                                <div data-anim="fade_left">
+                                    <figure><img src="images/home/design-gallary-4.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="development" class="tabcontent">
+                        <div class="flex">
+                            <div class="flex w-100">
+                                <div class="w-33" data-anim="fade_right">
+                                    <figure><img src="images/home/dev-gallary-3.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33" data-anim="fade_left">
+                                    <figure><img src="images/home/dev-gallary-4.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33" data-anim="fade_right">
+                                    <figure><img src="images/home/dev-gallary-5.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33 w_img" data-anim="fade_left">
+                                    <figure><img src="images/home/dev-gallary-6.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33 ww_img" data-anim="fade_right">
+                                    <figure><img src="images/home/dev-gallary-7.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33 w_img1" data-anim="fade_left">
+                                    <figure><img src="images/home/dev-gallary-8.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="branding" class="tabcontent">
+                        <div class="flex">
+                            <div class="flex w-100">
+                                <div class="w-33" data-anim="fade_right">
+                                    <figure><img src="images/home/brand-gallary-6.png" alt="img"></figure>
+                                </div>
+                                <div class="w-66" data-anim="fade_left">
+                                    <figure><img src="images/home/brand-gallary-6.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ui_ux" class="tabcontent">
+                        <div class="flex">
+                            <div class="flex w-100">
+                                <div class="w-33" data-anim="fade_right">
+                                    <figure><img src="images/home/ui-ux-gallary-3.png" alt="img"></figure>
+                                </div>
+                                <div class="w-66" data-anim="fade_left">
+                                    <figure><img src="images/home/ui-ux-gallary-4.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="marking" class="tabcontent">
+                        <div class="flex">
+                            <div class="flex w-100">
+                                <div class="w-33" data-anim="fade_right">
+                                    <figure><img src="images/home/market-gallary-1.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33" data-anim="fade_up">
+                                    <figure><img src="images/home/market-gallary-2.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33" data-anim="fade_left">
+                                    <figure><img src="images/home/market-gallary-3.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33" data-anim="fade_down">
+                                    <figure><img src="images/home/market-gallary-4.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="seo" class="tabcontent">
+                        <div class="flex">
+                            <div class="flex w-100">
+                                <div class="w-33" data-anim="fade_right">
+                                    <figure><img src="images/home/seo-gallary-4.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33" data-anim="fade_left">
+                                    <figure><img src="images/home/seo-gallary-5.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure data-anim="fade_right"><img src="images/home/seo-gallary-6.png"
+                                            alt="sm_img"></figure>
+                                    <figure data-anim="fade_right"><img src="images/home/seo-gallary-7.png"
+                                            alt="sm_img"></figure>
+                                </div>
+                                <div class="w-33" data-anim="fade_left">
+                                    <figure><img src="images/home/seo-gallary-8.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary-hr flex">
+                        <h6>Creative Solutions</h6>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-anim="fade_down">
+                        <div class="w-66">
+                            <div class="flex gap-10">
+                                <hr class="service_hr1">
+                                <h5>Services</h5>
+                            </div>
+                            <h2>Services We Offer</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam animi hic
+                                deleniti odio, temporibus facere sit voluptas?</p>
+                        </div>
+
+                        <div class="w-33 flex">
+                            <a href="/" class="btn_hover2 width-max-content">View All Services</a>
+                        </div>
+                        <!-- <hr> -->
+                    </div>
+                    <div class="flex s-card">
+                        <div class="service-card" data-anim="fade_down">
+                            <figure><img src="images/icon/slider1.png" alt="slider1"></figure>
+                            <h3>UI/UX Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti reiciendis ab a
+                                quam assumenda nostrum blanditiis omnis?</p>
+                            <a href="/">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-anim="fade_up">
+                            <figure><img src="images/icon/slider2.png" alt="slider2"></figure>
+                            <h3>Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti reiciendis ab a
+                                quam assumenda nostrum blanditiis omnis?</p>
+                            <a href="/">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-anim="fade_down">
+                            <figure><img src="images/icon/slider3.png" alt="slider3"></figure>
+                            <h3>Visual Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti reiciendis ab a
+                                quam assumenda nostrum blanditiis omnis?</p>
+                            <a href="/">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <div class="container">
+                <div class="flex exp-center" data-anim="fade_up">
+                    <div class="first_conainer">
+                        <div class="w-66">
+                            <div class="flex gap-10">
+                                <hr class="exp-hr1">
+                                <h5>Experience</h5>
+                            </div>
+                            <h2>Grow Your Online Presence.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi, dolorum porro velit
+                                id
+                                nisi
+                                exercitationem commodi perferendis!</p>
+                        </div>
+                        <div class="flex w-33">
+                            <a href="/" class="btn_hover1 width-max-content">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="w-50 flex" data-anim="zoom_in">
+                            <div class="experience_mak">
+                                <figure><img src="images/home/experience.png" alt="img"></figure>
+                            </div>
+                        </div>
+                        <div class="info_container">
+                            <div class="w-50 flex ex-card" data-anim="fade_up" data-delay="1s">
+                                <div>
+                                    <h3>90%</h3>
+                                </div>
+                                <div>
+                                    <h4>Creative Approach</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, voluptas
+                                        quaerat. Totam aspernatur, adipisci excepturi eveniet optio mollitia?</p>
+                                </div>
+                            </div>
+                            <div class="w-50 flex ex-card" data-anim="fade_up" data-delay="2s">
+                                <div>
+                                    <h3>99%</h3>
+                                </div>
+                                <div>
+                                    <h4>Guaranteed Success</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, voluptas
+                                        quaerat. Totam aspernatur, adipisci excepturi eveniet optio mollitia?</p>
+                                </div>
+                            </div>
+                            <div class="w-50 flex ex-card" data-anim="fade_up" data-delay="3s">
+                                <div>
+                                    <h3>85%</h3>
+                                </div>
+                                <div>
+                                    <h4>Brand Strategy</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, voluptas
+                                        quaerat. Totam aspernatur, adipisci excepturi eveniet optio mollitia?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container p-relative">
+                <div class="work-area text-center work-para" data-anim="fade_up">
+                    <h5>How We Work</h5>
+                    <h2>Our Porcess for Delivering Results</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam deleniti laudantium aliquid
+                        nostrum
+                        doloribus nihil aspernatur fugiat natus.</p>
+                </div>
+            </div>
+            <div class="work-hr flex">
+                <hr>
+                <h6>Project in steps</h6>
+            </div>
+            <div class="work-line">
+                <div data-anim="zoom_in">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path class="animated-path" fill="#7436bb" transform="translate(100 100)" data-anim="morph1"
+                            data-duration="7s"
+                            d="M30.4,-46.3C37.5,-42.7,40,-31.1,37.7,-21.5C35.5,-12,28.3,-4.5,25.5,2.5C22.7,9.5,24.2,15.9,23.8,26C23.4,36.1,21.1,50,12.8,60C4.4,69.9,-9.9,76.1,-23.8,74.8C-37.7,73.5,-51.3,64.8,-60,53C-68.7,41.1,-72.6,26.1,-70.5,12.7C-68.4,-0.6,-60.4,-12.3,-53.5,-23.3C-46.7,-34.4,-41.2,-44.9,-32.5,-47.8C-23.8,-50.6,-11.9,-45.8,-0.1,-45.6C11.6,-45.4,23.3,-49.9,30.4,-46.3Z" />
+                    </svg>
+                    <div>
+                        <h2>01.</h2>
+                        <h4>Make an appointment</h4>
+                    </div>
+                </div>
+
+                <div data-anim="zoom_in">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#7436bb" data-anim="morph2" data-duration="7s"
+                            d="M42.7,-73.4C54.6,-67,63.1,-54.2,71.5,-40.9C80,-27.6,88.4,-13.8,87.4,-0.6C86.4,12.7,76.1,25.3,67.4,38.2C58.7,51.1,51.7,64.1,40.7,71.4C29.7,78.7,14.9,80.2,-0.1,80.3C-15,80.4,-29.9,79.1,-40.9,71.8C-51.8,64.5,-58.7,51.2,-65.6,38.2C-72.6,25.2,-79.7,12.6,-80,-0.2C-80.3,-13,-73.8,-25.9,-66.4,-38.1C-58.9,-50.3,-50.5,-61.6,-39.3,-68.4C-28.1,-75.2,-14.1,-77.4,0.7,-78.5C15.4,-79.7,30.8,-79.8,42.7,-73.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <div>
+                        <h2>02.</h2>
+                        <h4>Meet Our Team</h4>
+                    </div>
+                </div>
+
+                <div data-anim="zoom_in">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#7436bb " data-anim="morph3" data-duration="7s"
+                            d="M42.7,-73.4C54.6,-67,63.1,-54.2,71.5,-40.9C80,-27.6,88.4,-13.8,87.4,-0.6C86.4,12.7,76.1,25.3,67.4,38.2C58.7,51.1,51.7,64.1,40.7,71.4C29.7,78.7,14.9,80.2,-0.1,80.3C-15,80.4,-29.9,79.1,-40.9,71.8C-51.8,64.5,-58.7,51.2,-65.6,38.2C-72.6,25.2,-79.7,12.6,-80,-0.2C-80.3,-13,-73.8,-25.9,-66.4,-38.1C-58.9,-50.3,-50.5,-61.6,-39.3,-68.4C-28.1,-75.2,-14.1,-77.4,0.7,-78.5C15.4,-79.7,30.8,-79.8,42.7,-73.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <div>
+                        <h2>03.</h2>
+                        <h4>Get Consultation</h4>
+                    </div>
+                </div>
+
+                <div data-anim="zoom_in">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#7436bb " data-anim="morph4" data-duration="7s"
+                            d="M42.7,-73.4C54.6,-67,63.1,-54.2,71.5,-40.9C80,-27.6,88.4,-13.8,87.4,-0.6C86.4,12.7,76.1,25.3,67.4,38.2C58.7,51.1,51.7,64.1,40.7,71.4C29.7,78.7,14.9,80.2,-0.1,80.3C-15,80.4,-29.9,79.1,-40.9,71.8C-51.8,64.5,-58.7,51.2,-65.6,38.2C-72.6,25.2,-79.7,12.6,-80,-0.2C-80.3,-13,-73.8,-25.9,-66.4,-38.1C-58.9,-50.3,-50.5,-61.6,-39.3,-68.4C-28.1,-75.2,-14.1,-77.4,0.7,-78.5C15.4,-79.7,30.8,-79.8,42.7,-73.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <div>
+                        <h2>04.</h2>
+                        <h4>Start Projects</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flex btn_container" data-anim="zoom_in">
+                <a href="/" class="btn_hover2 width-max-content">Contact Now</a>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <div class="flex team-center" data-anim="fade_up">
+                    <div class="w-66">
+                        <div class="flex gap-10">
+                            <hr class="team-hr1">
+                            <h5>Our Team</h5>
+                        </div>
+                        <h2>Meet Our Team of Professionals</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet eos ipsa ea architecto,
+                            neque numquam rerum exercitationem.</p>
+                    </div>
+                    <div class="w-33 flex">
+                        <a href="/" class="btn_hover2 width-max-content">All members </a>
+                    </div>
+                </div>
+                <div class="team-slider-wrapper" data-anim="fade_right" data-delay="0.4s">
+                    <div class="team-slider flex">
+                        <div class="team-img">
+                            <img src="images/slider/team-slider1.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay_text">
+                                    <h3>Jane Doe</h3>
+                                    <h4>Designer</h4>
+                                    <div class="flex gap-10">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-img">
+                            <img src="images/slider/team-slider2.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay_text">
+                                    <h3>Katti Pairi</h3>
+                                    <h4>Seo expert</h4>
+                                    <div class="flex gap-10">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-img">
+                            <img src="images/slider/team-slider3.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay_text">
+                                    <h3>Jonny Call</h3>
+                                    <h4>Developer</h4>
+                                    <div class="flex gap-10">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-img">
+                            <img src="images/slider/team-slider4.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay_text">
+                                    <h3>Anii Deo</h3>
+                                    <h4>UI / UX</h4>
+                                    <div class="flex gap-10">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-img">
+                            <img src="images/slider/team-slider1.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay_text">
+                                    <h3>Jane Doe</h3>
+                                    <h4>Designer</h4>
+                                    <div class="flex gap-10">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-img">
+                            <img src="images/slider/team-slider2.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay_text">
+                                    <h3>Katti Pairi</h3>
+                                    <h4>Seo expert</h4>
+                                    <div class="flex gap-10">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-btn" data-anim="zoom_in">
+                <div class="container flex flex-space-between">
+                    <h4>Ask a question To Our Amazing Team And Get, Responsive Quicly.</h4>
+                    <a href="/" class="btn_hover2 width-max-content">Contact Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <span></span>
+            <div>
+                <div class="pricing-hr flex gap-10">
+                    <hr>
+                    <h6>Pricing Plans</h6>
+                </div>
+                <div class="container">
+                    <div class="text-center flex flex-direction-column gap-10" data-anim="fade_down">
+                        <h5>Pricing</h5>
+                        <h2>Pricing Plans</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate asperiores quia
+                            consequatur
+                            maiores, qui itaque assumenda praesentium sapiente!</p>
+                    </div>
+                </div>
+                <div class="pricing-card flex gap-10 text-center">
+                    <div class="flex flex-direction-column gap-10" data-anim="fade_up">
+                        <h3>Basic</h3>
+                        <h2>#24</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="/" class="btn_hover1 width-max-content">Get Started</a>
+                    </div>
+                    <div class="flex flex-direction-column gap-10" data-anim="fade_down">
+                        <h3>Standart</h3>
+                        <h2>#594</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="/" class="btn_hover1 width-max-content">Get Started</a>
+                    </div>
+                    <div class="flex flex-direction-column gap-10" data-anim="fade_up">
+                        <h3>Premium</h3>
+                        <h2>#99</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="/" class="btn_hover1 width-max-content">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <span></span>
+            <div class="container">
+                <div class="flex">
+                    <div class="w-50 text-center" data-anim="fade_up">
+                        <div class="flex gap-10">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+                        </div>
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptas voluptatem harum
+                            modi explicabo minima odit quidem numquam praesentium atque.</p>
+                    </div>
+                    <div class="w-50">
+                        <div class="accordion flex flex-direction-column gap-10" id="accordion" data-anim="fade_down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex flex-space-between">
+                                        What Ding of Digital Services Do You Provide?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe fuga,
+                                        asperiores reiciendis eos dolorum commodi quis unde nam modi.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex flex-space-between">
+                                        What is Your Process for Working with Clients?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe fuga,
+                                        asperiores reiciendis eos dolorum commodi quis unde nam modi.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex flex-space-between">
+                                        What is Your Timeline For Completing a Project?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe fuga,
+                                        asperiores reiciendis eos dolorum commodi quis unde nam modi.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex flex-space-between">
+                                        What if i'm not Satisfied with The Work?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe fuga,
+                                        asperiores reiciendis eos dolorum commodi quis unde nam modi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="flex blog-center">
+                    <div class="w-66">
+                        <div class="flex gap-10">
+                            <hr class="blog-hr1">
+                            <h5>Blogs</h5>
+                        </div>
+                        <h2>Latest Posts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magnam tempore eligendi a non
+                            temporibus illo cumque iste earum nulla!</p>
+                    </div>
+                    <div class="w-33 flex">
+                        <a href="/" class="btn_hover2 width-max-content">See all blogs</a>
+                    </div>
+                </div>
+                <div class="flex gap-10 blog-cards">
+                    <div class="blog-card w-100" data-anim="fade_up">
+                        <img src="images/home/blog1.png" alt="img" class="card-img=top">
+                        <div class="card-body">
+                            <h4>10 Must-know Digital Marketing Trands In 2023</h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card w-100" data-anim="fade_down">
+                        <img src="images/home/blog2.png" alt="img" class="card-img=top">
+                        <div class="card-body">
+                            <h4>The Importance Of Responsive Web Design For Your Business</h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card w-100" data-anim="fade_up">
+                        <img src="images/home/blog3.png" alt="img" class="card-img=top">
+                        <div class="card-body">
+                            <h4>How To Create A successful Social Media Strategy</h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-hr flex flex-direction-column">
+                    <div class="flex gap-10" data-anim="fade_left">
+                        <hr>
+                        <h6>Newsletter</h6>
+                    </div>
+                    <h3>Join Our Mailing List</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam mollitia quasi
+                        rem atque aliquam aut illum consequuntur beatae explicabo doloremque.</p>
+                </div>
+                <form action="#" id="footer-form" class="flex flex-space-between gap-10" data-anim="zoom_in"
+                    data-delay="0.4sx`">
+                    <div id="footer-message"></div>
+                    <input type="email" required placeholder="Enter your mail">
+                    <button type="submit" class="btn_hover1 width-max-content">Get Started</button>
+                </form>
+            </div>
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="flex footer-center">
+                        <div class="w-33 flex flex-direction-column gap-10" data-anim="fade_right">
+                            <a href="/"><img src="images/logo.png" alt="footer-logo"></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit accusamus
+                                minus itaque facere voluptates placeat dolores tempora exercitationem corrupti.</p>
+                            <span>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-isntagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </span>
+                        </div>
+                        <div class="w-16" data-anim="fade_up">
+                            <h4>Quick Links</h4>
+                            <ul class="flex flex-direction-column gap-10">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-16 flex" data-anim="fade_down">
+                            <ul class="flex flex-direction-column gap-10">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-33 flex flex-direction-column" data-anim="fade_left">
+                            <h4>Get Connected</h4>
+                            <ul class="flex flex-direction-column gap-10 ">
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                                    <a href="#" class="text-lowercase">YourName@email.com </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                    <a href="#">+123-456-7890</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-sharp fa-regular fa-clock"></i></a>
+                                    <a href="#">Office Hours: 8AM - 11PM
+                                        Sunday - Weekend Day
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container flex gap-10 flex-space-between">
+                    <h6>Copyright &copy; 2024 Digitaly By <a href="/" class="p-0">Mona</a></h6>
+                    <h6>Powered By <b>Mona</b></h6>
+                </div>
+            </div>
+        </footer>
+
+        <button id="backToTopBtn" class="btn_hover2 width-max-content" onclick="scrollToTop()"><i
+                class="fa-solid fa-arrow-turn-up"></i></button>
+    </div>
+</body>
+
+</html>

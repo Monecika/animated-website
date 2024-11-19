@@ -1,0 +1,35 @@
+.zoom_in {
+  animation: zoomInEffect 1s forwards;
+}
+
+.fade_up {
+  animation: fadeUp 1s forwards;
+}
+
+.fade_down {
+  animation: fadeDown 1s forwards;
+}
+
+.fade_right {
+  animation: fadeRight 1s forwards;
+}
+
+.fade_left {
+  animation: fadeLeft 1s forwards;
+}
+
+.morph1 {
+  animation: morph1 alternate infinite;
+}
+
+.morph2 {
+  animation: morph2 alternate infinite;
+}
+
+.morph3 {
+  animation: morph3 alternate infinite;
+}
+
+.morph4 {
+  animation: morph4 alternate infinite;
+}
